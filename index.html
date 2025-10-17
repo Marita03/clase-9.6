@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style> 
+      @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+      :root{
+        --bs-font-sans-serif:"Sourse Code Pro", monospace;
+        --bs-body-font-family: var(--bs-font-sna-serif);
+      }
+
+  
+
+      .carousel-item img{
+        filter: grayscale(1);
+        transition: all ease 1s;
+
+      }
+      .carousel-item: hover img{
+        filter: grayscale(0);
+        transition: all ease 1s;
+
+      }
+      </style>
+  </head>
+  <body>
+
+    <div class ="container">
+      <div class ="row text-white text-center fw-bold">
+        <div class ="col col-sm-6 col-md-4 col-ig-3 bg-success">
+          <h1>Uno</h1> <p>texto</p> 
+  </div>
+        <div class="col-12 col-sm-6 col-md-4 col-ig-3 bg-danger"><h1>Otro</h1><p>texto</p></div>
+        <div class="col-12 col-sm-6 col-md-4 col-ig-3 bg-info"><h1>Otro</h1><p>texto</p></div>
+        <div class="col-12 col-sm-6 col-md-4 col-ig-3 bg-warning"><h1>Otro</h1><p>texto</p></div>  
+        </div class= "colo-12">
+          <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/id/237/800/400" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/id/250/800/400" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/id/253/800/400" class="d-block w-100" alt="...">
+    </div>
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

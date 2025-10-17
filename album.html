@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1" />
+        <meta name="description" content="" />
+        <title>Mi portafolio con Bootstrap</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta name="theme-color" content="#712cf9" />
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+            .b-example-divider {
+                width: 100%;
+                height: 3rem;
+                background-color: #0000001a;
+                border: solid rgba(0, 0, 0, 0.15);
+                border-width: 1px 0;
+                box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+            }
+            .bi {
+                vertical-align: -0.125em;
+                fill: currentColor;
+            }
+
+            .btn-bd-primary {
+                --bd-violet-bg: #712cf9;
+                --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+                --bs-btn-font-weight: 600;
+                --bs-btn-color: var(--bs-white);
+                --bs-btn-bg: var(--bd-violet-bg);
+                --bs-btn-border-color: var(--bd-violet-bg);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: #6528e0;
+                --bs-btn-hover-border-color: #6528e0;
+                --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: #5a23c8;
+                --bs-btn-active-border-color: #5a23c8;
+            }
+            .bd-mode-toggle {
+                z-index: 1500;
+            }
+            .bd-mode-toggle .bi {
+                width: 1em;
+                height: 1em;
+            }
+            .bd-mode-toggle .dropdown-menu .active .bi {
+                display: block !important;
+            }
+
+             .card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+            }
+            .card-img-top {
+                height: auto;
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+          <header data-bs-theme="dark">
+            <div class="collapse text-bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>holiss</h4>
+                            <p class="text-body-secondary">
+                                Este es mi primer portafolio probando bootstrap.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4>Contact</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.instagram.com/?hl=es-la" class="text-white">
+                                Te dejo mi instagram</a></li>
+                                <li><a href="mailto:miorellanam@uc.cl" class="text-white">
+                                Contactame por mail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                        <strong>Portafolio Mariii</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">María Ignacia Orellana Muñoz</h1>
+                        <p class="lead text-body-secondary"> Portafolio Diseño Integral <br> 2023-2025.</p>
+                        <p><a href="#" class="btn btn-primary my-2">Página principal</a> <a href="#" class="btn btn-secondary my-2">Más información.</a></p>
+                    </div>
+                </div>
+            </section>
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="popote"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-body-secondary py-5">
+            <div class="container">
+                <p class="float-end mb-1"><a href="#">Inicio</a></p>
+                <p class="mb-1">Espero que te haga gustado mi portafolio!</p>
+        
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script> 
+            
+const trabajos = [
+    {
+          title:"Velare",
+          category: "Taller de Diseño para la Innovación",
+          photo:"img/velaret6.png",
+          description:"Es una estructura de exhibición diseñada para instalarse al interior de un escaparate o window display, ubicado en la fachada de una tienda. Su función es enmarcar y destacar prendas y accesorios, transformando la vitrina en una experiencia visual que invita a detenerse y observar"
+        },
+
+        {
+          title:"Pauu",
+          category: "Taller de Problematización y Conceptualización para el Diseño",
+          photo:"img/pauut3.png",
+          description:"Arnés con diseño ilustrado identitario de la Vega. Incluye sistema QR de identificación y registro histórico de cuidados de cada perro"
+        },
+        {
+          title:"Külla-Mawida",
+          category: "Taller de Diseño Integral",
+          photo:"img/Árbolest4.png",
+          description:"Cápsulas miniatura de árboles nativos de Huilo Huilo, que resaltan la singularidad de cada árbol. "
+        },
+
+        {
+          title:"Larún",
+          category: "Taller de Ideación y Formalización para el Diseño",
+          photo:"img/Larún.png",
+          description:"Sistema de soporte portátil diseñado para manipularse con los pies, ajustable a la anatomía del usuario"
+        },
+
+        {
+          title:"Conmigo",
+          category: "Taller de Diseño Estratégico",
+          photo:"img/conmigo.png",
+          description:"Prenda calmante para perros voladores"
+        },    
+
+]
+
+ const portafolio = document.querySelector("#popote");
+        trabajos.forEach((v) => {
+          portafolio.innerHTML +=
+           `<div class="col">
+               <div class="card shadow-sm"> 
+            <img src="${v.photo}"  alt="${v.category}" height= "225"
+
+                                <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                        <div class="btn-group"> 
+                                                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-body-secondary">9mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+`;
+        });
+
+
+        </script>
+
+    </body>
+</html>
+
